@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 
    // Command to execute the child process (using cmd to redirect input from pipe)
    char command[256];
-   snprintf(command, sizeof(command), "cmd /c more > %s", destinationFile);
+   snprintf(command, sizeof(command), "child.exe %s", destinationFile);
 
    // Create the child process
    if (!CreateProcess(NULL, command, NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi))
