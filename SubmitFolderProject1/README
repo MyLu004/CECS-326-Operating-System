@@ -1,0 +1,7 @@
+How to compile my code
+
+compile the C file and run the code
+
+gcc filecopy.c -o filecopyOutput
+./filecopyOutput inputFile.txt outputFile.txt
+

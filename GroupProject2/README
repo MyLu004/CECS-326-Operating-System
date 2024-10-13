@@ -1,0 +1,33 @@
+# **DINNING PHILOSOPHERS PROBLEM**
+
+## **CECS 326 OPERATING SYSTEM**
+### Contributor :  My Lu, Fozhan Babaeiyan
+### Date : 10/13/2024
+
+This project implements the Dining Philosophers Problem using C and POSIX threads (pthread). The goal is to use synchronization techniques to prevent deadlock and ensure fair access to shared resources (forks) among philosophers. Each philosopher alternates between thinking and eating, competing for shared forks.
+
+#Project Structure
+chopstickProblem.cpp: Contains the main code implementing the Dining Philosophers Problem, utilizing pthread mutexes and condition variables for synchronization.
+
+### **Compilation and Execution**
+Requirements:
+- GCC compiler (gcc)
+- POSIC thread library (pthreads)
+
+###**BUILD AND RUN**
+To compile and run the project, open a terminal and navigate to the directory containing chopstickProblem.cpp. Use the following commands:
+
+1. Compile the code 
+> $ gcc chopstickProblem.cpp -o chopstickOutput.exe
+2. Run the Executable : this command starts the simulation of philosophers alternately thinking and eating
+> $ ./chopstickOutput.exe
+
+
+## EXAMPLE OUTPUT
+
+```
+Philosopher 0 is thinking
+Philosopher 1 is hungry
+Philosopher 1 starts eating
+Philosopher 1 finishes eating and returns forks.
+```
