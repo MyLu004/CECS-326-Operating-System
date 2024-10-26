@@ -16,7 +16,7 @@ class BankersAlgorithm:
         self.num_resources = len(available)
         self.need = self.calculate_need()  # Calculate the Need matrix
 
-    def calculate_need(self) -> List[List[int]]:
+    def calculate_need(self):
         """
         Calculates the Need matrix where Need[i][j] = Maximum[i][j] - Allocation[i][j].
         This matrix represents the remaining resources each process may still request.
@@ -28,7 +28,7 @@ class BankersAlgorithm:
             for i in range(self.num_processes)
         ]
 
-    def is_safe(self) -> Tuple[bool, List[int]]:
+    def is_safe(self):
         """
         Safety algorithm to determine if the system is in a safe state.
         Returns:
@@ -53,7 +53,7 @@ class BankersAlgorithm:
                 return False, []  # No safe sequence found
         return True, safe_sequence
 
-    def request_resources(self, process_num: int, request: List[int]) -> bool:
+    def request_resources(self, process_num: int, request: List[int]):
         """
         Checks and grants a resource request if it keeps the system in a safe state.
         Parameters:
@@ -88,7 +88,6 @@ class BankersAlgorithm:
             print("Request cannot be granted as it leads to an unsafe state.")
             return False
 
-# Sample usage with test cases
 if __name__ == "__main__":
     # Initialize available, maximum, and allocation matrices
     available = [3, 3, 2]  # Example available resources
