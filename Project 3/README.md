@@ -7,14 +7,14 @@ This project is an implementation of the Banker's Algorithm in Python, designed 
 1. **Clone the Repository**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/foojanbabaeeian/CECS-326.git
+   cd Project 3
    ```
 
 2. **Run the Script**
    Execute the script in your terminal:
    ```bash
-   python bankers_algorithm.py
+   python main.py
    ```
 
 ## Project Overview
