@@ -27,40 +27,46 @@ sudo apt update
 sudo apt install build-essential
 Compile the code using the provided Makefile:
 
-## Usage
 For FCFS scheduling:
-make fcfs
+    ```bash
+    make fcfs
+
 For Priority scheduling:
-make priority
+    ```bash
+    make priority
 For Round Robin scheduling:
-make rr
-Usage
+    ```bash
+    make rr
+## Usage
 After compiling, you can run each scheduler with the appropriate task file.
 
 Example:
-
-bash
-./fcfs schedule.txt   # Run FCFS scheduler
-./priority pri-schedule.txt   # Run Priority scheduler
-./rr rr-schedule.txt  # Run Round Robin scheduler
+    ```bash
+    ./fcfs schedule.txt   # Run FCFS scheduler
+    ./priority pri-schedule.txt   # Run Priority scheduler
+    ./rr rr-schedule.txt  # Run Round Robin scheduler
 
 ## Code Documentation
-driver.c
+
+# driver.c
 Purpose: The main driver file reads tasks from an input file and passes them to the selected scheduling algorithm.
 Key Functions:
 main(): Reads the schedule file, parses task attributes (name, priority, burst), and invokes the scheduler.
-schedule_fcfs.c
+
+# schedule_fcfs.c
 Purpose: Implements First-Come, First-Served scheduling where tasks are executed in the order of arrival.
 Key Functions:
 add(): Adds a new task to the list.
 schedule(): Executes tasks in the order they were added.
-schedule_priority.c
+
+# schedule_priority.c
 Purpose: Implements Priority scheduling where tasks are selected based on their priority values.
 Key Functions:
 add(): Adds a new task to the list.
 pickNextTask(): Selects the highest-priority task from the list.
 schedule(): Executes tasks in descending order of priority.
-schedule_rr.c
+
+# schedule_rr.c
 Purpose: Implements Round Robin scheduling with a fixed time quantum (10 milliseconds).
 Key Functions:
 add(): Adds a new task to the list.
@@ -70,4 +76,5 @@ schedule(): Executes tasks in a round-robin fashion, giving each task up to 10 m
 CECS 326 - PROJECT REPORT 4
 
 Name(s): My Lu						Student ID number: 029895591
+
 Name(s):Fozhan Babaeiyan 			Student ID number: 029701865 
