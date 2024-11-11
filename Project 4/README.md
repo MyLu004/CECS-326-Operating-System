@@ -24,24 +24,22 @@ To install and run this project on a Unix-like system (e.g., Linux, WSL):
    cd <project_directory>
    ```
 Ensure make and gcc are installed on your system. If not, install them:
-
+```bash
 sudo apt update
 sudo apt install build-essential
+```
 Compile the code using the provided Makefile:
 
 For FCFS scheduling:
-
     ```bash
     make fcfs
     ```
 
 For Priority scheduling:
-
     ```bash
     make priority
     ```
 For Round Robin scheduling:
-
     ```bash
     make rr
     ```
@@ -49,7 +47,6 @@ For Round Robin scheduling:
 After compiling, you can run each scheduler with the appropriate task file.
 
 Example:
-
     ```c
     ./fcfs schedule.txt   # Run FCFS scheduler
     ./priority pri-schedule.txt   # Run Priority scheduler
