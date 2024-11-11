@@ -18,6 +18,7 @@ This project implements three classic CPU scheduling algorithms: First-Come, Fir
 To install and run this project on a Unix-like system (e.g., Linux, WSL):
 
 1. Clone the repository and navigate to the project directory:
+
    ```bash
    git clone <repository_url>
    cd <project_directory>
@@ -29,15 +30,18 @@ sudo apt install build-essential
 Compile the code using the provided Makefile:
 
 For FCFS scheduling:
+
     ```bash
     make fcfs
     ```
 
 For Priority scheduling:
+
     ```bash
     make priority
     ```
 For Round Robin scheduling:
+
     ```bash
     make rr
     ```
@@ -45,7 +49,8 @@ For Round Robin scheduling:
 After compiling, you can run each scheduler with the appropriate task file.
 
 Example:
-    ```bash
+
+    ```c
     ./fcfs schedule.txt   # Run FCFS scheduler
     ./priority pri-schedule.txt   # Run Priority scheduler
     ./rr rr-schedule.txt  # Run Round Robin scheduler
