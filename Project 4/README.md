@@ -27,6 +27,7 @@ sudo apt update
 sudo apt install build-essential
 Compile the code using the provided Makefile:
 
+## Usage
 For FCFS scheduling:
 make fcfs
 For Priority scheduling:
@@ -43,7 +44,7 @@ bash
 ./priority pri-schedule.txt   # Run Priority scheduler
 ./rr rr-schedule.txt  # Run Round Robin scheduler
 
-Code Documentation
+## Code Documentation
 driver.c
 Purpose: The main driver file reads tasks from an input file and passes them to the selected scheduling algorithm.
 Key Functions:
@@ -65,7 +66,7 @@ Key Functions:
 add(): Adds a new task to the list.
 schedule(): Executes tasks in a round-robin fashion, giving each task up to 10 milliseconds per cycle.
 
-Contributing
+## Contributing
 CECS 326 - PROJECT REPORT 4
 
 Name(s): My Lu						Student ID number: 029895591
