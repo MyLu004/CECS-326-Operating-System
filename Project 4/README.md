@@ -31,23 +31,23 @@ sudo apt install build-essential
 Compile the code using the provided Makefile:
 
 For FCFS scheduling:
-    ```bash
+    ```
     make fcfs
     ```
 
 For Priority scheduling:
-    ```bash
+    ```
     make priority
     ```
 For Round Robin scheduling:
-    ```bash
+    ```
     make rr
     ```
 ## Usage
 After compiling, you can run each scheduler with the appropriate task file.
 
 Example:
-    ```bash
+    ```
     ./fcfs schedule.txt   # Run FCFS scheduler
     ./priority pri-schedule.txt   # Run Priority scheduler
     ./rr rr-schedule.txt  # Run Round Robin scheduler
