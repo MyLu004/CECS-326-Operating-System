@@ -47,7 +47,7 @@ For Round Robin scheduling:
 After compiling, you can run each scheduler with the appropriate task file.
 
 Example:
-    ```c
+    ```bash
     ./fcfs schedule.txt   # Run FCFS scheduler
     ./priority pri-schedule.txt   # Run Priority scheduler
     ./rr rr-schedule.txt  # Run Round Robin scheduler
